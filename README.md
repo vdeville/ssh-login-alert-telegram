@@ -6,22 +6,18 @@ Work on all popular linux system (Debian <3, Ubuntu, Arch Linux etc..)
 
 ### Requirement
 - curl
+- git
 
-Yes only this !
+
 
 ### Install
-1) Clone this repo or copy alert.sh for example in /root/:
-```cd /root/ && git clone https://github.com/MyTheValentinus/ssh-login-alert-telegram```
+1) Clone to /opt/ folder
+```cd /opt/ && git clone https://github.com/stylersnico/ssh-login-alert-telegram```
 
 2) Edit two configuration variables by editing alert.sh:
-```editor alert.sh```
+```nano alert.sh```
 
-3) Add this script when user connect, edit bashrc, profile or openssh-server option etc..
+3) Add this script when user connect with the deploy script:
 ```sh deploy.sh```
-_(Don't forget to change the path of script if you use deploy.sh)_
 
-4) Test it !
-
-5) Start this project and tweet me (@MyTheValentinus) ! Thanks ;) <3
-
-
+4) Confirm that the script is working by logging to ssh again.
