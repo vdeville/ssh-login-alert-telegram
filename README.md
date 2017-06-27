@@ -15,7 +15,7 @@ Work on all popular linux system (Debian <3, Ubuntu, Arch Linux etc..)
 ```cd /opt/ && git clone https://github.com/stylersnico/ssh-login-alert-telegram```
 
 2) Edit two configuration variables by editing alert.sh:
-```nano alert.sh```
+```vim alert.sh```
 
 3) Add this script when user connect with the deploy script:
 ```sh deploy.sh```
@@ -26,5 +26,4 @@ Work on all popular linux system (Debian <3, Ubuntu, Arch Linux etc..)
 ### Install with Ansible
 
 If you have many servers go check: https://github.com/stylersnico/Deploy-Telegram-SSH-Alerting-with-Ansible
-
-Forked from : https://github.com/MyTheValentinus/ssh-login-alert-telegram
+Thanks to Nicolas Simond (@stylersnico) for ansible ! 
