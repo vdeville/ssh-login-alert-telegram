@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-echo "
+cat <<EOF > /etc/profile.d/telegram-alert.sh
 #!/usr/bin/env bash
 # Log connection
-sh /opt/ssh-login-alert-telegram/alert.sh" > /etc/profile.d/telegram-alert.sh
+bash /opt/ssh-login-alert-telegram/alert.sh
+EOF
