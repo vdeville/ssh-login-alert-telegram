@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Import credentials form config file
-. ./credentials.config
+. /opt/ssh-login-alert-telegram/credentials.config
 
 URL="https://api.telegram.org/bot${KEY}/sendMessage"
 DATE="$(date "+%d %b %Y %H:%M")"
