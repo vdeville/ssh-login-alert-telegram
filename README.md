@@ -23,5 +23,4 @@ Work on all popular linux system (Debian, Ubuntu, Arch Linux etc..)
 
 ### Install with Ansible
 
-If you have many servers go check: https://github.com/stylersnico/Deploy-Telegram-SSH-Alerting-with-Ansible
-Thanks to Nicolas Simond (@stylersnico) for ansible ! 
+If you have many servers go check: https://github.com/MyTheValentinus/Deploy-Telegram-SSH-Alerting-with-Ansible (fork of initial @stylernico work)
