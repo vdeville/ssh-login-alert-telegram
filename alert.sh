@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
-
+ 
 # Import credentials form config file
 . /opt/ssh-login-alert-telegram/credentials.config
-
+for i in "${USERID[@]}"
+do
 URL="https://api.telegram.org/bot${KEY}/sendMessage"
 DATE="$(date "+%d %b %Y %H:%M")"
 
@@ -18,5 +19,6 @@ if [ -n "$SSH_CLIENT" ]; then
 	Date: ${DATE}
 	More informations: [${IPINFO}](${IPINFO})"
 
-	curl -s -d "chat_id=${USERID}&text=${TEXT}&disable_web_page_preview=true&parse_mode=markdown" $URL > /dev/null
+	curl -s -d "chat_id=$i&text=${TEXT}&disable_web_page_preview=true&parse_mode=markdown" $URL > /dev/null
 fi
+done
