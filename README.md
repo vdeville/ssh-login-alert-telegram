@@ -10,7 +10,7 @@ Work on all popular linux system (Debian, Ubuntu, Arch Linux etc..)
 
 ### Install
 1) Clone or download to /opt/ folder
-```cd /opt/ && git clone https://github.com/MyTheValentinus/ssh-login-alert-telegram```
+```cd /opt/ && git clone https://github.com/vdeville/ssh-login-alert-telegram```
 
 2) Edit two configuration variables by editing credentials.config:
 ```vim credentials.config```
@@ -23,4 +23,4 @@ Work on all popular linux system (Debian, Ubuntu, Arch Linux etc..)
 
 ### Install with Ansible
 
-If you have many servers go check: https://github.com/MyTheValentinus/Deploy-Telegram-SSH-Alerting-with-Ansible (fork of initial @stylernico work)
+If you have many servers go check: https://github.com/vdeville/Deploy-Telegram-SSH-Alerting-with-Ansible (fork of initial @stylernico work)
